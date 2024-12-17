@@ -16,7 +16,7 @@ Este projeto foi desenvolvido utilizando **HTML**, **CSS** e **Bootstrap**. É o
 
 Imagens com a criação da navbar e outras seções iniciais
 
-![Exemplo de tela inicial](assets/img/exemplo-tela.png)
+![Exemplo de tela inicial](assets/img-for-docs/prototipo1.png)
 
 ---
 
