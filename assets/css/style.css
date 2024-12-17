@@ -24,3 +24,8 @@
     max-width: 600px;
     margin: 0 auto;
   }
+
+  .card-menu-item img {
+    height: 300px;
+    object-fit: cover;
+  }
