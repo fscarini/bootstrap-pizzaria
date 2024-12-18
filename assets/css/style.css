@@ -34,7 +34,7 @@ section{
   }
 
   .card-menu-item img {
-    height: 300px;
+    max-height: 300px;
     object-fit: cover;
   }
 
@@ -44,4 +44,16 @@ section{
 
   .nav-js-list > .nav-item > .nav-link:hover{
     color: #EA222F;
+  }
+
+  .card-body{
+    max-height: 600px;
+  }
+
+  .col-md-4 img{
+    height: 100%;
+  }
+
+  .card-text{
+    font-size: 0.8rem;
   }
