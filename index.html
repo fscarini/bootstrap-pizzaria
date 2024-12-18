@@ -230,30 +230,97 @@
           >
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
-                <div class="card card-menu">
-                  <img
-                    src="assets/img/pizza-salgada.jpg"
-                    class="card-img-top"
-                    alt="Pizza salgada"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Pizzas Salgadas</h5>
-                    <p class="card-text">À partir de R$33,90</p>
+              <div class="button-flex">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#pizzaSalgadaleModal">
+                  <div class="card card-menu">
+                    <img
+                      src="assets/img/pizza-salgada.jpg"
+                      class="card-img-top"
+                      alt="Pizza salgada"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Pizzas Salgadas</h5>
+                      <p class="card-text">À partir de R$33,90</p>
+                    </div>
                   </div>
                 </div>
+                </button>
               </div>
-              <div class="col">
-                <div class="card card-menu">
-                  <img
-                    src="assets/img/pizza-doce.jpg"
-                    class="card-img-top"
-                    alt="Pizza doce"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Pizzas Doces</h5>
-                    <p class="card-text">À partir de R$38,90</p>
-                  </div>
-                </div>
+
+<!-- Modal Pizzas Salgadas -->
+<div class="modal fade" id="pizzaSalgadaleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="pizzaSalgadaModalLabel">Pizzas Salgadas</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="list-group">
+          <a href="" class="list-group-item list-group-item-action" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Mussarela</h5>
+              <small>R$33,90</small>
+            </div>
+            <p class="mb-1">Molho de tomate, mussarela, tomate e orégano</p>
+          </a>
+          <a href="" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Calabresa</h5>
+              <small class="text-body-secondary">R$33,90</small>
+            </div>
+            <p class="mb-1">Molho de tomate, calabresa e cebola</p>
+          </a>
+          <a href="" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Marguerita</h5>
+              <small class="text-body-secondary">R$35,50</small>
+            </div>
+            <p class="mb-1">Molho de tomate, mussarela, tomate e manjericão</p>
+          </a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+              
+<div class="col">
+<div class="button-flex">
+  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#pizzaDoceleModal">
+    <div class="card card-menu">
+      <img
+        src="assets/img/pizza-doce.jpg"
+        class="card-img-top"
+        alt="Pizza doce"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Pizzas Doces</h5>
+        <p class="card-text">À partir de R$38,90</p>
+      </div>
+    </div>
+  </button>
+</div>
+
+<!-- Modal Pizzas Doces -->
+<div class="modal fade" id="pizzaDoceleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="pizzaDoceModalLabel">Pizzas Doces</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
               </div>
             </div>
           </div>

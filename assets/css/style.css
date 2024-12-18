@@ -60,5 +60,12 @@ figure, section{
 
   .card-menu img{
     height: 300px;
+    max-width: 400px;
     object-fit: cover;
+  }
+
+  .button-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
