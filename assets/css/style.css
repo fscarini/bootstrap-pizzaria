@@ -58,12 +58,7 @@ section{
     font-size: 0.8rem;
   }
 
-  .h-100 > img{
-    max-width: 100%;
-    object-fit: center;
-    max-height: 70%;
-  }
-
-  .card-lanches-content{
-    max-height: 70%;
+  .card-menu img{
+    height: 300px;
+    object-fit: cover;
   }

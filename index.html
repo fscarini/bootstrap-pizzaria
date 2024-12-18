@@ -178,30 +178,80 @@
         </div>
       </section>
 
-      <!-- Menu -->
-       <section class="container mt-3">
+      <!-- Menu de navegação do Cardápio -->
+      <section class="container mt-3">
         <nav>
           <div class="nav nav-tabs nav-js-list" id="nav-tab" role="tablist">
-            <button class="nav-link active" id="nav-pizza-tab" data-bs-toggle="tab" data-bs-target="#nav-pizza" type="button" role="tab" aria-controls="nav-pizza" aria-selected="true">Pizzas Salgadas & Doces</button>
-            <button class="nav-link" id="nav-esfiha-tab" data-bs-toggle="tab" data-bs-target="#nav-esfiha" type="button" role="tab" aria-controls="nav-esfiha" aria-selected="false">Esfihas Salgadas & Doces</button>
-            <button class="nav-link" id="nav-lanche-tab" data-bs-toggle="tab" data-bs-target="#nav-lanche" type="button" role="tab" aria-controls="nav-lanche" aria-selected="false">Lanches & Combos</button>
+            <button
+              class="nav-link active"
+              id="nav-pizza-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-pizza"
+              type="button"
+              role="tab"
+              aria-controls="nav-pizza"
+              aria-selected="true"
+            >
+              Pizzas Salgadas & Doces
+            </button>
+            <button
+              class="nav-link"
+              id="nav-esfiha-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-esfiha"
+              type="button"
+              role="tab"
+              aria-controls="nav-esfiha"
+              aria-selected="false"
+            >
+              Esfihas Salgadas & Doces
+            </button>
+            <button
+              class="nav-link"
+              id="nav-lanche-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-lanche"
+              type="button"
+              role="tab"
+              aria-controls="nav-lanche"
+              aria-selected="false"
+            >
+              Lanches & Combos
+            </button>
           </div>
         </nav>
+
+        <!-- Cardápio -->
         <div class="tab-content mt-3" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="nav-pizza" role="tabpanel" aria-labelledby="nav-pizza-tab" tabindex="0">
+          <!-- Pizzas -->
+          <div
+            class="tab-pane fade show active"
+            id="nav-pizza"
+            role="tabpanel"
+            aria-labelledby="nav-pizza-tab"
+            tabindex="0"
+          >
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
-                <div class="card h-100">
-                  <img src="assets/img/pizza-salgada.jpg" class="card-img-top" alt="pizza salgada">
+                <div class="card card-menu">
+                  <img
+                    src="assets/img/pizza-salgada.jpg"
+                    class="card-img-top"
+                    alt="Pizza salgada"
+                  />
                   <div class="card-body">
                     <h5 class="card-title">Pizzas Salgadas</h5>
-                    <p class="card-text">À partir de R$34,90</p>
+                    <p class="card-text">À partir de R$33,90</p>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card h-100">
-                  <img src="assets/img/pizza-doce.jpg" class="card-img-top" alt="pizza doce">
+                <div class="card card-menu">
+                  <img
+                    src="assets/img/pizza-doce.jpg"
+                    class="card-img-top"
+                    alt="Pizza doce"
+                  />
                   <div class="card-body">
                     <h5 class="card-title">Pizzas Doces</h5>
                     <p class="card-text">À partir de R$38,90</p>
@@ -210,50 +260,119 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="nav-esfiha" role="tabpanel" aria-labelledby="nav-esfiha-tab" tabindex="0">
+
+          <!-- Esfihas -->
+          <div
+            class="tab-pane fade"
+            id="nav-esfiha"
+            role="tabpanel"
+            aria-labelledby="nav-esfiha-tab"
+            tabindex="0"
+          >
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
-                <div class="card h-100">
-                  <img src="assets/img/esfiha-salgada.jpg" class="card-img-top" alt="esfiha salgada">
+                <div class="card card-menu">
+                  <img
+                    src="assets/img/esfiha-salgada.jpg"
+                    class="card-img-top"
+                    alt="Esfiha salgada"
+                  />
                   <div class="card-body">
-                    <h5 class="card-title">Esfiha Salgadas</h5>
-                    <p class="card-text">À partir de R$3,50</p>
+                    <h5 class="card-title">Esfihas Salgadas</h5>
+                    <p class="card-text">À partir de R$3,20</p>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card h-100">
-                  <img src="assets/img/esfiha-doce.jpg" class="card-img-top" alt="esfiha doce">
+                <div class="card card-menu">
+                  <img
+                    src="assets/img/esfiha-doce.jpg"
+                    class="card-img-top"
+                    alt="Esfiha doce"
+                  />
                   <div class="card-body">
                     <h5 class="card-title">Esfihas Doces</h5>
-                    <p class="card-text">À partir de R$7,60</p>
+                    <p class="card-text">À partir de R$6,90</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          </div>
-          <div class="tab-pane fade" id="nav-lanche" role="tabpanel" aria-labelledby="nav-lanche-tab" tabindex="0">
-            <div class="row row-cols-1 row-cols-md-4 g-4">
+
+          <!-- Lanches -->
+          <div
+            class="tab-pane fade"
+            id="nav-lanche"
+            role="tabpanel"
+            aria-labelledby="nav-lanche-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
-                <div class="card h-100 card-lanches-content">
-                  <img src="assets/img/lanche.png" class="card-img-top" alt="Lanche">
+                <div class="card card-menu">
+                  <img
+                    src="assets/img/lanche.png"
+                    class="card-img-top"
+                    alt="Hamurguer"
+                  />
                   <div class="card-body">
                     <h5 class="card-title">Monte seu combo</h5>
-                    <p class="card-text">À partir de R$27,90</p>
+                    <p class="card-text">À partir de R$26,90</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-       </section>
+      </section>
+
+      <!-- Localização -->
+      <section id="local" class="container mt-5 mb-5 text-center">
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#localModal">
+          Pedir agora mesmo!
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="localModal" tabindex="-1" aria-labelledby="localModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="localModalLabel">
+                  Estamos esperando a sua ligação!
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p> Av. Imperador, 3686 - <strong>(11) 2047-1011</strong></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.428979263177!2d-46.47079612548937!3d-23.51706855996483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61252cbd9925%3A0xfdc676d606f7201c!2sAv.%20Imperador%2C%203686%20-%20Jardim%20Sao%20Sebastiao%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008051-000!5e0!3m2!1spt-BR!2sbr!4v1734541377848!5m2!1spt-BR!2sbr" width="450" height="350" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script
-      src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js";
-      integrity = "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz";
-      crossorigin = "anonymous";
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      ;
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      ;
+      crossorigin="anonymous"
+      ;
     ></script>
   </body>
 </html>
