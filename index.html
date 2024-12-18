@@ -37,13 +37,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Início</a>
+              <a class="nav-link active" aria-current="page" href="#citacao">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Cardápio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Localização</a>
+              <a class="nav-link" href="#cardapio">Cardápio</a>
             </li>
           </ul>
         </div>
@@ -104,7 +101,7 @@
       </div>
 
       <!-- Citação -->
-      <figure class="text-center m-5">
+      <figure class="text-center m-5" id="citacao">
         <blockquote class="blockquote">
           <h3 class="fs-4 fw-lighter fst-italic mb-0">
             A pizza é mais do que um prato: é o elo que une histórias, risos e
@@ -179,7 +176,7 @@
       </section>
 
       <!-- Menu de navegação do Cardápio -->
-      <section class="container mt-3">
+      <section class="container mt-3" id="cardapio">
         <nav>
           <div class="nav nav-tabs nav-js-list" id="nav-tab" role="tablist">
             <button
@@ -334,7 +331,7 @@
 
         <!-- Modal -->
         <div class="modal fade" id="localModal" tabindex="-1" aria-labelledby="localModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
+          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="localModalLabel">
@@ -365,6 +362,14 @@
         </div>
       </section>
     </main>
+
+    <footer class="text-center bg-dark p-2 mt-5 text-light">
+      <img width="120" alt="" src="assets/img/logo.png">
+      <p class="mt-2 mb-0 fw-bold">
+        Pizzaria La Paolla | A alegria brasileira na cozinha italiana!
+      </p>
+      <p>(11) 2047-1011</p>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
