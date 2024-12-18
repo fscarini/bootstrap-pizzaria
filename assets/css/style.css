@@ -1,3 +1,7 @@
+section{
+  scroll-margin-top: 5rem;
+}
+
 .navbar-brand img{
     max-width: 60px;
 }
@@ -20,6 +24,10 @@
     position: absolute;
   }
 
+  .blockquote-footer cite{
+    color: #EA222F;
+  }
+
   .blockquote h3{
     max-width: 600px;
     margin: 0 auto;
@@ -28,4 +36,12 @@
   .card-menu-item img {
     height: 300px;
     object-fit: cover;
+  }
+
+  .nav-js-list > .nav-item > .nav-link{
+    color: #2B3035;
+  }
+
+  .nav-js-list > .nav-item > .nav-link:hover{
+    color: #EA222F;
   }
