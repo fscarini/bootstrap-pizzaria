@@ -38,11 +38,11 @@ section{
     object-fit: cover;
   }
 
-  .nav-js-list > .nav-item > .nav-link{
+  .nav-js-list > .nav-link{
     color: #2B3035;
   }
 
-  .nav-js-list > .nav-item > .nav-link:hover{
+  .nav-js-list > .nav-link:hover{
     color: #EA222F;
   }
 
@@ -56,4 +56,14 @@ section{
 
   .card-text{
     font-size: 0.8rem;
+  }
+
+  .h-100 > img{
+    max-width: 100%;
+    object-fit: center;
+    max-height: 70%;
+  }
+
+  .card-lanches-content{
+    max-height: 70%;
   }
