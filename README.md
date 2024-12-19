@@ -12,11 +12,14 @@ Este projeto foi desenvolvido utilizando **HTML**, **CSS** e **Bootstrap**. É o
 
 ---
 
-## Capturas de Tela - Protótipo
+## Capturas de Tela
 
-Imagens com a criação da navbar e outras seções iniciais
-
-![Exemplo de tela inicial](assets/img-for-docs/prototipo1.png)
+![Protótipo em desenvolvimento](assets/img-for-docs/prototipo1.png)
+![Início](assets/img-for-docs/initial-page.png)
+![Cardápio](assets/img-for-docs/nav-cardapio.png)
+![Cardápio](assets/img-for-docs/nav-cardapio2.png)
+![modal para cardápio](assets/img-for-docs/modal-pizza-doce.png)
+![modal para localização](assets/img-for-docs/modal-local.png)
 
 ---
 
