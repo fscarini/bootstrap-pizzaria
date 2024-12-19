@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pizzaria La Paolla</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
@@ -85,7 +86,7 @@
           famílias ao redor da mesma mesa.
         </h3>
       </blockquote>
-      <figcaption class="blockquote-footer">
+      <figcaption class="blockquote-footer fw-bold">
         <cite title="Source Title">Pizzaria La Paolla</cite>
       </figcaption>
     </figure>
@@ -211,7 +212,7 @@
                     <img src="assets/img/pizza-doce.jpg" class="card-img-top" alt="Pizza doce" />
                     <div class="card-body">
                       <h5 class="card-title">Pizzas Doces</h5>
-                      <p class="card-text">À partir de R$38,90</p>
+                      <p class="card-text">À partir de R$45,00</p>
                     </div>
                   </div>
                 </button>
@@ -249,7 +250,7 @@
                     <img src="assets/img/esfiha-salgada.jpg" class="card-img-top" alt="Esfiha salgada" />
                     <div class="card-body">
                       <h5 class="card-title">Esfihas Salgadas</h5>
-                      <p class="card-text">À partir de R$3,20</p>
+                      <p class="card-text">À partir de R$2,50</p>
                     </div>
                   </div>
                 </button>
@@ -266,10 +267,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    ...
+                    <div id="esfihaSalgadaContainer" class="list-group"></div>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
                   </div>
                 </div>
               </div>
@@ -283,7 +284,7 @@
                     <img src="assets/img/esfiha-doce.jpg" class="card-img-top" alt="Esfiha doce" />
                     <div class="card-body">
                       <h5 class="card-title">Esfihas Doces</h5>
-                      <p class="card-text">À partir de R$6,90</p>
+                      <p class="card-text">À partir de R$7,00</p>
                     </div>
                   </div>
                 </button>
@@ -301,10 +302,10 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  ...
+                  <div id="esfihaDoceContainer" class="list-group"></div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
                 </div>
               </div>
             </div>
@@ -313,37 +314,97 @@
 
         <!-- Lanches -->
         <div class="tab-pane fade" id="nav-lanche" role="tabpanel" aria-labelledby="nav-lanche-tab" tabindex="0">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- Monte seu combo -->
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+
+            <!-- Combos -->
             <div class="col">
               <div class="button-flex">
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#combosModal">
                   <div class="card card-menu">
-                    <img src="assets/img/lanche.png" class="card-img-top" alt="Hamurguer" />
+                    <img src="assets/img/combo-rio.avif" class="card-img-top" alt="Hamurguer" />
                     <div class="card-body">
-                      <h5 class="card-title">Escolha seu combo</h5>
-                      <p class="card-text">À partir de R$26,90</p>
+                      <h5 class="card-title mb-0">Combo Rio</h5>
+                      <small class="card-text">R$ 33,50</small>
+                      <p class="card-text mt-2">Pão de brioche, 1 hambúrguer artesanal de 120g, cheddar e molho barbecue + batata frita + refrigerante lata</p>
                     </div>
                   </div>
-                </button>
               </div>
             </div>
 
-            <div class="modal fade" id="combosModal" tabindex="-1" aria-labelledby="combosModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="combosModalLabel">Escolha seu combo</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="col">
+              <div class="button-flex">
+                  <div class="card card-menu">
+                    <img src="assets/img/combo-moscou.avif" class="card-img-top" alt="Hamurguer" />
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Combo Moscou</h5>
+                      <small class="card-text">R$ 38,00</small>
+                      <p class="card-text mt-2">Pão de brioche, 1 hambúrguer artesanal de 120g, cheddar, ovo e maionese temperada + batata frita + refrigerante lata</p>
+                    </div>
                   </div>
-                  <div class="modal-body">
-                    ...
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="button-flex">
+                  <div class="card card-menu">
+                    <img src="assets/img/combo-toquio.avif" class="card-img-top" alt="Hamurguer" />
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Combo Tóquio</h5>
+                      <small class="card-text">R$ 35,00</small>
+                      <p class="card-text mt-2">Pão de brioche, 1 hambúrguer artesanal de 120g, cheddar, bacon e molho especial + batata frita + refrigerante lata</p>
+                    </div>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="button-flex">
+                  <div class="card card-menu">
+                    <img src="assets/img/combo-denver.avif" class="card-img-top" alt="Hamurguer" />
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Combo Denver</h5>
+                      <small class="card-text">R$ 35,00</small>
+                      <p class="card-text mt-2">Pão de brioche, 1 hambúrguer artesanal de 120g, cheddar, bacon, picles e molho barbecue + batata frita + refrigerante lata</p>
+                    </div>
                   </div>
-                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="button-flex">
+                  <div class="card card-menu">
+                    <img src="assets/img/combo-oslo.avif" class="card-img-top" alt="Hamurguer" />
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Combo Oslo</h5>
+                      <small class="card-text">R$ 37,00</small>
+                      <p class="card-text mt-2">Pão de brioche, 1 hambúrguer artesanal de 120g, cheddar, bacon, onion rings e molho barbecue + batata frita + refrigerante lata</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="button-flex">
+                  <div class="card card-menu">
+                    <img src="assets/img/combo-lisboa.avif" class="card-img-top" alt="Hamurguer" />
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Combo Lisboa</h5>
+                      <small class="card-text">R$ 36,50</small>
+                      <p class="card-text mt-2">Pão de brioche, hambúrguer artesanal de 120g, provolone, rúcula, piches e molho especial + batata frita + refrigerante lata</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="button-flex">
+                  <div class="card card-menu">
+                    <img src="assets/img/combo-berlim.avif" class="card-img-top" alt="Hamurguer" />
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Combo Berlim</h5>
+                      <small class="card-text">R$ 37,50</small>
+                      <p class="card-text mt-2 card-content">Pão de brioche, hambúrguer artesanal de 120g, provolone, picles, tomate, cebola crispy, molho barbecue e maionese temperada + batata frita +  refrigerante lata</p>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
@@ -368,7 +429,13 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <p> Av. Imperador, 3686 - <strong>(11) 2047-1011</strong></p>
+              <p> Av. Imperador, 3686 - 
+                <strong>
+                  <a href="tel:+551120471011" class="text-decoration-none text-dark fw-b">
+                   <i class="fas fa-phone"></i> (11) 2047-1011
+                  </a>
+                </strong>
+              </p>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.428979263177!2d-46.47079612548937!3d-23.51706855996483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61252cbd9925%3A0xfdc676d606f7201c!2sAv.%20Imperador%2C%203686%20-%20Jardim%20Sao%20Sebastiao%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008051-000!5e0!3m2!1spt-BR!2sbr!4v1734541377848!5m2!1spt-BR!2sbr"
                 width="450" height="350" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"
@@ -385,12 +452,16 @@
     </section>
   </main>
 
-  <footer class="text-center bg-dark p-2 mt-5 text-light">
-    <img width="120" alt="" src="assets/img/logo.png">
-    <p class="mt-2 mb-0 fw-bold">
-      Pizzaria La Paolla | A alegria brasileira na cozinha italiana!
-    </p>
-    <p>(11) 2047-1011</p>
+  <footer class="text-center bg-dark p-2 pb-4 mt-5 text-light">
+        <img width="120" alt="" src="assets/img/logo.png">
+        <p class="mt-2 mb-1">Pizzaria La Paolla</p>
+        <p>00.170.291/0001-66</p>
+        <h5>Entre em contato conosco via telefone</h5>
+        <a href="tel:+551120471011" class="text-decoration-none text-light fw-b">
+          <i class="fas fa-phone"></i> (11) 2047-1011
+        </a>
+    <hr>
+    <p>© PIZZARIA LA PAOLLA LTDA, todos os direitos reservados.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ;
@@ -400,7 +471,6 @@
     <script src="assets/js/pizzaDoce.js"></script>
     <script src="assets/js/esfihaSalgada.js"></script>
     <script src="assets/js/esfihaDoce.js"></script>
-    <script src="assets/js/Lanches.js"></script>
 </body>
 
 </html>

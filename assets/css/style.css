@@ -57,10 +57,10 @@ figure, section{
   .card-text{
     font-size: 0.8rem;
   }
-
+  
   .card-menu img{
     height: 300px;
-    max-width: 400px;
+    max-width: 600px;
     object-fit: cover;
   }
 
