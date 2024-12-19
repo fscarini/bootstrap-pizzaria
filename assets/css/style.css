@@ -60,8 +60,12 @@ figure, section{
   
   .card-menu img{
     height: 300px;
-    max-width: 600px;
+    max-width: 400px;
     object-fit: cover;
+  }
+
+  .card-menu .img-combos{
+    max-width: 600px;
   }
 
   .button-flex{

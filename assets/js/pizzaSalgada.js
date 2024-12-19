@@ -132,7 +132,7 @@ const pizzaSalgada = [
         {
           "title": "Grega",
           "ingredients": "Peito de peru, tomate e mussarela. Todas as pizzas acompanham molho de tomate, orégano e azeitona verde (com caroço)",
-          "price": "R$ 645,00"
+          "price": "R$ 45,00"
         },
         {
           "title": "La Grazzia I",
