@@ -177,7 +177,7 @@
                     <img src="assets/img/pizza-salgada.jpg" class="card-img-top" alt="Pizza salgada" />
                     <div class="card-body">
                       <h5 class="card-title">Pizzas Salgadas</h5>
-                      <p class="card-text">À partir de R$33,90</p>
+                      <p class="card-text">À partir de R$40,00</p>
                     </div>
                   </div>
                 </button>
@@ -194,29 +194,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <div class="list-group">
-                      <a href="" class="list-group-item list-group-item-action" aria-current="true">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Mussarela</h5>
-                          <small>R$33,90</small>
-                        </div>
-                        <p class="mb-1">Molho de tomate, mussarela, tomate e orégano</p>
-                      </a>
-                      <a href="" class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Calabresa</h5>
-                          <small class="text-body-secondary">R$33,90</small>
-                        </div>
-                        <p class="mb-1">Molho de tomate, calabresa e cebola</p>
-                      </a>
-                      <a href="" class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Marguerita</h5>
-                          <small class="text-body-secondary">R$35,50</small>
-                        </div>
-                        <p class="mb-1">Molho de tomate, mussarela, tomate e manjericão</p>
-                      </a>
-                    </div>
+                    <div id="pizzaSalgadaContainer" class="list-group"></div>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
@@ -228,7 +206,7 @@
             <!-- Pizzas Doces  -->
             <div class="col">
               <div class="button-flex">
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#pizzaDoceleModal">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#pizzaDoceModal">
                   <div class="card card-menu">
                     <img src="assets/img/pizza-doce.jpg" class="card-img-top" alt="Pizza doce" />
                     <div class="card-body">
@@ -240,24 +218,24 @@
               </div>
             </div>
 
-              <!-- Modal Pizzas Doces -->
-              <div class="modal fade" id="pizzaDoceleModal" tabindex="-1" aria-labelledby="pizzaDoceleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="pizzaDoceModalLabel">Pizzas Doces</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                    </div>
+            <!-- Modal Pizzas Doces -->
+            <div class="modal fade" id="pizzaDoceModal" tabindex="-1" aria-labelledby="pizzaDoceModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="pizzaDoceModalLabel">Pizzas Doces</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="pizzaDoceContainer" class="list-group"></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
                   </div>
                 </div>
               </div>
+            </div>
           </div>
         </div>
 
@@ -339,35 +317,35 @@
             <!-- Monte seu combo -->
             <div class="col">
               <div class="button-flex">
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#combosModal">
-              <div class="card card-menu">
-                <img src="assets/img/lanche.png" class="card-img-top" alt="Hamurguer" />
-                <div class="card-body">
-                  <h5 class="card-title">Escolha seu combo</h5>
-                  <p class="card-text">À partir de R$26,90</p>
-                </div>
-              </div>
-              </button>
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#combosModal">
+                  <div class="card card-menu">
+                    <img src="assets/img/lanche.png" class="card-img-top" alt="Hamurguer" />
+                    <div class="card-body">
+                      <h5 class="card-title">Escolha seu combo</h5>
+                      <p class="card-text">À partir de R$26,90</p>
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
 
             <div class="modal fade" id="combosModal" tabindex="-1" aria-labelledby="combosModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="combosModalLabel">Escolha seu combo</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="combosModalLabel">Escolha seu combo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
@@ -416,8 +394,13 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ;
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" ; crossorigin="anonymous"
-    ;></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" ; crossorigin="anonymous" ;>
+    </script>
+    <script src="assets/js/pizzaSalgada.js"></script>
+    <script src="assets/js/pizzaDoce.js"></script>
+    <script src="assets/js/esfihaSalgada.js"></script>
+    <script src="assets/js/esfihaDoce.js"></script>
+    <script src="assets/js/Lanches.js"></script>
 </body>
 
 </html>
