@@ -1,476 +1,755 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pizzaria La Paolla</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pizzaria La Paolla</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-</head>
-
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="assets/img/logo.png" alt="Logo da Pizzaria" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#citacao">Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#cardapio">Cardápio</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <!-- Carrossel -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="https://images.unsplash.com/photo-1716237387592-805dbf8b2a5f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="d-block w-100" alt="pizza led" />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Seu momento especial merece La Paolla</h5>
-            <p>
-              Celebre com quem você ama, saboreando nossas pizzas
-              irresistíveis sem ter que sair de casa.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://images.unsplash.com/photo-1601924576374-990e34464c05?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="d-block w-100" alt="pizza" />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Sabor que encanta a cada pedaço</h5>
-            <p>
-              Nossas pizzas são feitas com ingredientes frescos e uma receita
-              artesanal que traz o verdadeiro sabor da pizza brasileira.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://images.unsplash.com/photo-1579751626657-72bc17010498?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="d-block w-100" alt="pizza" />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Da nossa cozinha para a sua mesa</h5>
-            <p>
-              Experimente a qualidade e o carinho em cada fatia, com pizzas
-              preparadas como se fossem para a nossa própria família.
-            </p>
-          </div>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png" alt="Logo da Pizzaria" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#citacao"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cardapio">Cardápio</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
 
-    <!-- Citação -->
-    <figure class="text-center m-5" id="citacao">
-      <blockquote class="blockquote">
-        <h3 class="fs-4 fw-lighter fst-italic mb-0">
-          A pizza é mais do que um prato: é o elo que une histórias, risos e
-          famílias ao redor da mesma mesa.
-        </h3>
-      </blockquote>
-      <figcaption class="blockquote-footer fw-bold">
-        <cite title="Source Title">Pizzaria La Paolla</cite>
-      </figcaption>
-    </figure>
-
-    <!-- Início -->
-    <section id="about" class="container mt-5">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="assets/img/card1-lapaolla.png" class="img-fluid rounded-start initial-img"
-                  alt="Pizza de mussarela e vinho" />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Pizzas & Esfihas</h5>
-                  <h6 class="card-subtitle mb-3 text-muted">
-                    O melhor da pizza e da esfiha em um só lugar
-                  </h6>
-                  <p class="card-text">
-                    Unimos ingredientes frescos, receitas tradicionais e um
-                    toque especial de criatividade para levar até você o
-                    melhor sabor. Seja uma pizza crocante ou esfihas
-                    suculentas, cada pedido é preparado com dedicação para
-                    momentos únicos à mesa.
-                  </p>
-                </div>
-              </div>
+    <main>
+      <!-- Carrossel -->
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.unsplash.com/photo-1716237387592-805dbf8b2a5f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block w-100"
+              alt="pizza led"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Seu momento especial merece La Paolla</h5>
+              <p>
+                Celebre com quem você ama, saboreando nossas pizzas
+                irresistíveis sem ter que sair de casa.
+              </p>
             </div>
           </div>
-        </div>
-        <div class="col-lg-6 col-md-12">
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="assets/img/card2-lapaolla.png" class="img-fluid rounded-start initial-img" alt="Combo de hamburguer" />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Hambúrgueres Artesanais</h5>
-                  <h6 class="card-subtitle mb-3 text-muted">
-                    Acreditamos que um belo lanche pode mudar o (seu) mundo
-                  </h6>
-                  <p class="card-text">
-                    Nossos hambúrgueres são feitos com ingredientes
-                    selecionados, suculentos e preparados artesanalmente.
-                    Acompanhados de batatas fritas crocantes e um refrigerante
-                    geladinho, eles formam o combo perfeito para matar a sua
-                    fome com muito sabor e qualidade.
-                  </p>
-                </div>
-              </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1601924576374-990e34464c05?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block w-100"
+              alt="pizza"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sabor que encanta a cada pedaço</h5>
+              <p>
+                Nossas pizzas são feitas com ingredientes frescos e uma receita
+                artesanal que traz o verdadeiro sabor da pizza brasileira.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1579751626657-72bc17010498?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block w-100"
+              alt="pizza"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Da nossa cozinha para a sua mesa</h5>
+              <p>
+                Experimente a qualidade e o carinho em cada fatia, com pizzas
+                preparadas como se fossem para a nossa própria família.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Menu de navegação do Cardápio -->
-    <section class="container mt-3" id="cardapio">
-      <nav>
-        <div class="nav nav-tabs nav-js-list" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="nav-pizza-tab" data-bs-toggle="tab" data-bs-target="#nav-pizza"
-            type="button" role="tab" aria-controls="nav-pizza" aria-selected="true">
-            Pizzas Salgadas & Doces
-          </button>
-          <button class="nav-link" id="nav-esfiha-tab" data-bs-toggle="tab" data-bs-target="#nav-esfiha" type="button"
-            role="tab" aria-controls="nav-esfiha" aria-selected="false">
-            Esfihas Salgadas & Doces
-          </button>
-          <button class="nav-link" id="nav-lanche-tab" data-bs-toggle="tab" data-bs-target="#nav-lanche" type="button"
-            role="tab" aria-controls="nav-lanche" aria-selected="false">
-            Lanches & Combos
-          </button>
-        </div>
-      </nav>
+      <!-- Citação -->
+      <figure class="text-center m-5" id="citacao">
+        <blockquote class="blockquote">
+          <h3 class="fs-4 fw-lighter fst-italic mb-0">
+            A pizza é mais do que um prato: é o elo que une histórias, risos e
+            famílias ao redor da mesma mesa.
+          </h3>
+        </blockquote>
+        <figcaption class="blockquote-footer fw-bold">
+          <cite title="Source Title">Pizzaria La Paolla</cite>
+        </figcaption>
+      </figure>
 
-      <!-- Cardápio -->
-      <div class="tab-content mt-3" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-pizza" role="tabpanel" aria-labelledby="nav-pizza-tab"
-          tabindex="0">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- Pizzas Salgadas -->
-            <div class="col">
-              <div class="button-flex">
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#pizzaSalgadaleModal">
-                  <div class="card card-menu">
-                    <img src="assets/img/pizza-salgada.jpg" class="card-img-top" alt="Pizza salgada" />
-                    <div class="card-body">
-                      <h5 class="card-title">Pizzas Salgadas</h5>
-                      <p class="card-text">À partir de R$40,00</p>
-                    </div>
-                  </div>
-                </button>
-              </div>
-            </div>
-
-            <!-- Modal Pizzas Salgadas -->
-            <div class="modal fade" id="pizzaSalgadaleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="pizzaSalgadaModalLabel">Pizzas Salgadas</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <div id="pizzaSalgadaContainer" class="list-group"></div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+      <!-- Início -->
+      <section id="about" class="container mt-5">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="assets/img/card1-lapaolla.png"
+                    class="img-fluid rounded-start initial-img"
+                    alt="Pizza de mussarela e vinho"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Pizzas & Esfihas</h5>
+                    <h6 class="card-subtitle mb-3 text-muted">
+                      O melhor da pizza e da esfiha em um só lugar
+                    </h6>
+                    <p class="card-text">
+                      Unimos ingredientes frescos, receitas tradicionais e um
+                      toque especial de criatividade para levar até você o
+                      melhor sabor. Seja uma pizza crocante ou esfihas
+                      suculentas, cada pedido é preparado com dedicação para
+                      momentos únicos à mesa.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- Pizzas Doces  -->
-            <div class="col">
-              <div class="button-flex">
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#pizzaDoceModal">
-                  <div class="card card-menu">
-                    <img src="assets/img/pizza-doce.jpg" class="card-img-top" alt="Pizza doce" />
-                    <div class="card-body">
-                      <h5 class="card-title">Pizzas Doces</h5>
-                      <p class="card-text">À partir de R$45,00</p>
-                    </div>
-                  </div>
-                </button>
-              </div>
-            </div>
-
-            <!-- Modal Pizzas Doces -->
-            <div class="modal fade" id="pizzaDoceModal" tabindex="-1" aria-labelledby="pizzaDoceModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="pizzaDoceModalLabel">Pizzas Doces</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <div id="pizzaDoceContainer" class="list-group"></div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="assets/img/card2-lapaolla.png"
+                    class="img-fluid rounded-start initial-img"
+                    alt="Combo de hamburguer"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Hambúrgueres Artesanais</h5>
+                    <h6 class="card-subtitle mb-3 text-muted">
+                      Acreditamos que um belo lanche pode mudar o (seu) mundo
+                    </h6>
+                    <p class="card-text">
+                      Nossos hambúrgueres são feitos com ingredientes
+                      selecionados, suculentos e preparados artesanalmente.
+                      Acompanhados de batatas fritas crocantes e um refrigerante
+                      geladinho, eles formam o combo perfeito para matar a sua
+                      fome com muito sabor e qualidade.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Esfihas Salgadas-->
-        <div class="tab-pane fade" id="nav-esfiha" role="tabpanel" aria-labelledby="nav-esfiha-tab" tabindex="0">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="button-flex">
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#esfihaSalgadaModal">
-                  <div class="card card-menu">
-                    <img src="assets/img/esfiha-salgada.jpg" class="card-img-top" alt="Esfiha salgada" />
-                    <div class="card-body">
-                      <h5 class="card-title">Esfihas Salgadas</h5>
-                      <p class="card-text">À partir de R$2,50</p>
+      <!-- Menu de navegação do Cardápio -->
+      <section class="container mt-3" id="cardapio">
+        <nav>
+          <div class="nav nav-tabs nav-js-list" id="nav-tab" role="tablist">
+            <button
+              class="nav-link active"
+              id="nav-pizza-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-pizza"
+              type="button"
+              role="tab"
+              aria-controls="nav-pizza"
+              aria-selected="true"
+            >
+              Pizzas Salgadas & Doces
+            </button>
+            <button
+              class="nav-link"
+              id="nav-esfiha-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-esfiha"
+              type="button"
+              role="tab"
+              aria-controls="nav-esfiha"
+              aria-selected="false"
+            >
+              Esfihas Salgadas & Doces
+            </button>
+            <button
+              class="nav-link"
+              id="nav-lanche-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-lanche"
+              type="button"
+              role="tab"
+              aria-controls="nav-lanche"
+              aria-selected="false"
+            >
+              Lanches & Combos
+            </button>
+          </div>
+        </nav>
+
+        <!-- Cardápio -->
+        <div class="tab-content mt-3" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-pizza"
+            role="tabpanel"
+            aria-labelledby="nav-pizza-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <!-- Pizzas Salgadas -->
+              <div class="col">
+                <div class="button-flex">
+                  <button
+                    type="button"
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#pizzaSalgadaleModal"
+                  >
+                    <div class="card card-menu">
+                      <img
+                        src="assets/img/pizza-salgada.jpg"
+                        class="card-img-top"
+                        alt="Pizza salgada"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Pizzas Salgadas</h5>
+                        <p class="card-text">À partir de R$40,00</p>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Modal Pizzas Salgadas -->
+              <div
+                class="modal fade"
+                id="pizzaSalgadaleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="pizzaSalgadaModalLabel">
+                        Pizzas Salgadas
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div id="pizzaSalgadaContainer" class="list-group"></div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Fechar
+                      </button>
                     </div>
                   </div>
-                </button>
+                </div>
+              </div>
+
+              <!-- Pizzas Doces  -->
+              <div class="col">
+                <div class="button-flex">
+                  <button
+                    type="button"
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#pizzaDoceModal"
+                  >
+                    <div class="card card-menu">
+                      <img
+                        src="assets/img/pizza-doce.jpg"
+                        class="card-img-top"
+                        alt="Pizza doce"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Pizzas Doces</h5>
+                        <p class="card-text">À partir de R$45,00</p>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Modal Pizzas Doces -->
+              <div
+                class="modal fade"
+                id="pizzaDoceModal"
+                tabindex="-1"
+                aria-labelledby="pizzaDoceModalLabel"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="pizzaDoceModalLabel">
+                        Pizzas Doces
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div id="pizzaDoceContainer" class="list-group"></div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Fechar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Esfihas Salgadas-->
+          <div
+            class="tab-pane fade"
+            id="nav-esfiha"
+            role="tabpanel"
+            aria-labelledby="nav-esfiha-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="button-flex">
+                  <button
+                    type="button"
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#esfihaSalgadaModal"
+                  >
+                    <div class="card card-menu">
+                      <img
+                        src="assets/img/esfiha-salgada.jpg"
+                        class="card-img-top"
+                        alt="Esfiha salgada"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Esfihas Salgadas</h5>
+                        <p class="card-text">À partir de R$2,50</p>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Modal Esfihas Salgadas -->
+              <div
+                class="modal fade"
+                id="esfihaSalgadaModal"
+                tabindex="-1"
+                aria-labelledby="esfihaSalgadaModalLabel"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="esfihaSalgadaModalLabel">
+                        Esfihas Salgadas
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div id="esfihaSalgadaContainer" class="list-group"></div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Fechar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Esfihas doces -->
+              <div class="col">
+                <div class="button-flex">
+                  <button
+                    type="button"
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#esfihaDoceModal"
+                  >
+                    <div class="card card-menu">
+                      <img
+                        src="assets/img/esfiha-doce.jpg"
+                        class="card-img-top"
+                        alt="Esfiha doce"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Esfihas Doces</h5>
+                        <p class="card-text">À partir de R$7,00</p>
+                      </div>
+                    </div>
+                  </button>
+                </div>
               </div>
             </div>
 
-            <!-- Modal Esfihas Salgadas -->
-            <div class="modal fade" id="esfihaSalgadaModal" tabindex="-1" aria-labelledby="esfihaSalgadaModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <!-- Modal Esfihas doces -->
+            <div
+              class="modal fade"
+              id="esfihaDoceModal"
+              tabindex="-1"
+              aria-labelledby="esfihaDoceModalLabel"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="esfihaSalgadaModalLabel">Esfihas Salgadas</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="esfihaDoceModalLabel">
+                      Esfihas Doces
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
                   </div>
                   <div class="modal-body">
-                    <div id="esfihaSalgadaContainer" class="list-group"></div>
+                    <div id="esfihaDoceContainer" class="list-group"></div>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                    >
+                      Fechar
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- Esfihas doces -->
-            <div class="col">
-              <div class="button-flex">
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#esfihaDoceModal">
-                  <div class="card card-menu">
-                    <img src="assets/img/esfiha-doce.jpg" class="card-img-top" alt="Esfiha doce" />
-                    <div class="card-body">
-                      <h5 class="card-title">Esfihas Doces</h5>
-                      <p class="card-text">À partir de R$7,00</p>
-                    </div>
-                  </div>
-                </button>
-              </div>
-            </div>
           </div>
 
-          <!-- Modal Esfihas doces -->
-          <div class="modal fade" id="esfihaDoceModal" tabindex="-1" aria-labelledby="esfihaDoceModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="esfihaDoceModalLabel">Esfihas Doces</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <div id="esfihaDoceContainer" class="list-group"></div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Lanches -->
-        <div class="tab-pane fade" id="nav-lanche" role="tabpanel" aria-labelledby="nav-lanche-tab" tabindex="0">
-          <div class="row row-cols-1 row-cols-md-4 g-4">
-
-            <!-- Combos -->
-            <div class="col">
-              <div class="button-flex">
+          <!-- Lanches -->
+          <div
+            class="tab-pane fade"
+            id="nav-lanche"
+            role="tabpanel"
+            aria-labelledby="nav-lanche-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+              <!-- Combos -->
+              <div class="col">
+                <div class="button-flex">
                   <div class="card card-menu">
-                    <img src="assets/img/combo-rio.avif" class="card-img-top img-combos" alt="Hamurguer" />
+                    <img
+                      src="assets/img/combo-rio.avif"
+                      class="card-img-top img-combos"
+                      alt="Hamurguer"
+                    />
                     <div class="card-body">
                       <h5 class="card-title mb-0">Combo Rio</h5>
                       <small class="card-text">R$ 33,50</small>
-                      <p class="card-text mt-2">Pão de brioche, 1 hambúrguer artesanal de 120g, cheddar e molho barbecue + batata frita + refrigerante lata</p>
+                      <p class="card-text mt-2">
+                        Pão de brioche, 1 hambúrguer artesanal de 120g, cheddar
+                        e molho barbecue + batata frita + refrigerante lata
+                      </p>
                     </div>
                   </div>
+                </div>
               </div>
-            </div>
 
-            <div class="col">
-              <div class="button-flex">
+              <div class="col">
+                <div class="button-flex">
                   <div class="card card-menu">
-                    <img src="assets/img/combo-moscou.avif" class="card-img-top img-combos" alt="Hamurguer" />
+                    <img
+                      src="assets/img/combo-moscou.avif"
+                      class="card-img-top img-combos"
+                      alt="Hamurguer"
+                    />
                     <div class="card-body">
                       <h5 class="card-title mb-0">Combo Moscou</h5>
                       <small class="card-text">R$ 38,00</small>
-                      <p class="card-text mt-2">Pão de brioche, 1 hambúrguer artesanal de 120g, cheddar, ovo e maionese temperada + batata frita + refrigerante lata</p>
+                      <p class="card-text mt-2">
+                        Pão de brioche, 1 hambúrguer artesanal de 120g, cheddar,
+                        ovo e maionese temperada + batata frita + refrigerante
+                        lata
+                      </p>
                     </div>
                   </div>
+                </div>
               </div>
-            </div>
 
-            <div class="col">
-              <div class="button-flex">
+              <div class="col">
+                <div class="button-flex">
                   <div class="card card-menu">
-                    <img src="assets/img/combo-toquio.avif" class="card-img-top img-combos" alt="Hamurguer" />
+                    <img
+                      src="assets/img/combo-toquio.avif"
+                      class="card-img-top img-combos"
+                      alt="Hamurguer"
+                    />
                     <div class="card-body">
                       <h5 class="card-title mb-0">Combo Tóquio</h5>
                       <small class="card-text">R$ 35,00</small>
-                      <p class="card-text mt-2">Pão de brioche, 1 hambúrguer artesanal de 120g, cheddar, bacon e molho especial + batata frita + refrigerante lata</p>
+                      <p class="card-text mt-2">
+                        Pão de brioche, 1 hambúrguer artesanal de 120g, cheddar,
+                        bacon e molho especial + batata frita + refrigerante
+                        lata
+                      </p>
                     </div>
                   </div>
+                </div>
               </div>
-            </div>
 
-            <div class="col">
-              <div class="button-flex">
+              <div class="col">
+                <div class="button-flex">
                   <div class="card card-menu">
-                    <img src="assets/img/combo-denver.avif" class="card-img-top img-combos" alt="Hamurguer" />
+                    <img
+                      src="assets/img/combo-denver.avif"
+                      class="card-img-top img-combos"
+                      alt="Hamurguer"
+                    />
                     <div class="card-body">
                       <h5 class="card-title mb-0">Combo Denver</h5>
                       <small class="card-text">R$ 35,00</small>
-                      <p class="card-text mt-2">Pão de brioche, 1 hambúrguer artesanal de 120g, cheddar, bacon, picles e molho barbecue + batata frita + refrigerante lata</p>
+                      <p class="card-text mt-2">
+                        Pão de brioche, 1 hambúrguer artesanal de 120g, cheddar,
+                        bacon, picles e molho barbecue + batata frita +
+                        refrigerante lata
+                      </p>
                     </div>
                   </div>
+                </div>
               </div>
-            </div>
 
-            <div class="col">
-              <div class="button-flex">
+              <div class="col">
+                <div class="button-flex">
                   <div class="card card-menu">
-                    <img src="assets/img/combo-oslo.avif" class="card-img-top img-combos" alt="Hamurguer" />
+                    <img
+                      src="assets/img/combo-oslo.avif"
+                      class="card-img-top img-combos"
+                      alt="Hamurguer"
+                    />
                     <div class="card-body">
                       <h5 class="card-title mb-0">Combo Oslo</h5>
                       <small class="card-text">R$ 37,00</small>
-                      <p class="card-text mt-2">Pão de brioche, 1 hambúrguer artesanal de 120g, cheddar, bacon, onion rings e molho barbecue + batata frita + refrigerante lata</p>
+                      <p class="card-text mt-2">
+                        Pão de brioche, 1 hambúrguer artesanal de 120g, cheddar,
+                        bacon, onion rings e molho barbecue + batata frita +
+                        refrigerante lata
+                      </p>
                     </div>
                   </div>
+                </div>
               </div>
-            </div>
 
-            <div class="col">
-              <div class="button-flex">
+              <div class="col">
+                <div class="button-flex">
                   <div class="card card-menu">
-                    <img src="assets/img/combo-lisboa.avif" class="card-img-top img-combos" alt="Hamurguer" />
+                    <img
+                      src="assets/img/combo-lisboa.avif"
+                      class="card-img-top img-combos"
+                      alt="Hamurguer"
+                    />
                     <div class="card-body">
                       <h5 class="card-title mb-0">Combo Lisboa</h5>
                       <small class="card-text">R$ 36,50</small>
-                      <p class="card-text mt-2">Pão de brioche, hambúrguer artesanal de 120g, provolone, rúcula, piches e molho especial + batata frita + refrigerante lata</p>
+                      <p class="card-text mt-2">
+                        Pão de brioche, hambúrguer artesanal de 120g, provolone,
+                        rúcula, piches e molho especial + batata frita +
+                        refrigerante lata
+                      </p>
                     </div>
                   </div>
+                </div>
               </div>
-            </div>
 
-            <div class="col">
-              <div class="button-flex">
+              <div class="col">
+                <div class="button-flex">
                   <div class="card card-menu">
-                    <img src="assets/img/combo-berlim.avif" class="card-img-top img-combos" alt="Hamurguer" />
+                    <img
+                      src="assets/img/combo-berlim.avif"
+                      class="card-img-top img-combos"
+                      alt="Hamurguer"
+                    />
                     <div class="card-body">
                       <h5 class="card-title mb-0">Combo Berlim</h5>
                       <small class="card-text">R$ 37,50</small>
-                      <p class="card-text mt-2 card-content">Pão de brioche, hambúrguer artesanal de 120g, provolone, picles, tomate, cebola crispy, molho barbecue e maionese temperada + batata frita +  refrigerante lata</p>
+                      <p class="card-text mt-2 card-content">
+                        Pão de brioche, hambúrguer artesanal de 120g, provolone,
+                        picles, tomate, cebola crispy, molho barbecue e maionese
+                        temperada + batata frita + refrigerante lata
+                      </p>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Localização -->
-    <section id="local" class="container mt-5 mb-5 text-center">
-      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#localModal">
-        Pedir agora mesmo!
-      </button>
+      <!-- Localização -->
+      <section id="local" class="container mt-5 mb-5 text-center">
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#localModal"
+        >
+          Pedir agora mesmo!
+        </button>
 
-      <!-- Modal -->
-      <div class="modal fade" id="localModal" tabindex="-1" aria-labelledby="localModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="localModalLabel">
-                Estamos esperando a sua ligação!
-              </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <p> Av. Imperador, 3686 - 
-                <strong>
-                  <a href="tel:+551120471011" class="text-decoration-none text-dark fw-b">
-                   <i class="fas fa-phone"></i> (11) 2047-1011
-                  </a>
-                </strong>
-              </p>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.428979263177!2d-46.47079612548937!3d-23.51706855996483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61252cbd9925%3A0xfdc676d606f7201c!2sAv.%20Imperador%2C%203686%20-%20Jardim%20Sao%20Sebastiao%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008051-000!5e0!3m2!1spt-BR!2sbr!4v1734541377848!5m2!1spt-BR!2sbr"
-                width="450" height="350" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
-                Fechar
-              </button>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="localModal"
+          tabindex="-1"
+          aria-labelledby="localModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="localModalLabel">
+                  Estamos esperando a sua ligação!
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Av. Imperador, 3686 -
+                  <strong>
+                    <a
+                      href="tel:+551120471011"
+                      class="text-decoration-none text-dark fw-b"
+                    >
+                      <i class="fas fa-phone"></i> (11) 2047-1011
+                    </a>
+                  </strong>
+                </p>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.428979263177!2d-46.47079612548937!3d-23.51706855996483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61252cbd9925%3A0xfdc676d606f7201c!2sAv.%20Imperador%2C%203686%20-%20Jardim%20Sao%20Sebastiao%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008051-000!5e0!3m2!1spt-BR!2sbr!4v1734541377848!5m2!1spt-BR!2sbr"
+                  width="450"
+                  height="350"
+                  style="border: 0; width: 100%"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Fechar
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="text-center bg-dark p-2 pb-4 mt-5 text-light">
-        <img width="120" alt="" src="assets/img/logo.png">
-        <p class="mt-2 mb-1">Pizzaria La Paolla</p>
-        <p>00.170.291/0001-66</p>
-        <h5>Entre em contato conosco via telefone</h5>
-        <a href="tel:+551120471011" class="text-decoration-none text-light fw-b">
-          <i class="fas fa-phone"></i> (11) 2047-1011
-        </a>
-    <hr>
-    <p>© PIZZARIA LA PAOLLA LTDA, todos os direitos reservados.</p>
-  </footer>
+    <footer class="text-center bg-dark p-2 pb-4 mt-5 text-light">
+      <img width="120" alt="" src="assets/img/logo.png" />
+      <p class="mt-2 mb-1">Pizzaria La Paolla</p>
+      <p>00.170.291/0001-66</p>
+      <h5>Entre em contato conosco via telefone</h5>
+      <a href="tel:+551120471011" class="text-decoration-none text-light fw-b">
+        <i class="fas fa-phone"></i> (11) 2047-1011
+      </a>
+      <hr />
+      <p>© PIZZARIA LA PAOLLA LTDA, todos os direitos reservados.</p>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ;
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" ; crossorigin="anonymous" ;>
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      ;
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      ;
+      crossorigin="anonymous"
+      ;
+    ></script>
     <script src="assets/js/pizzaSalgada.js"></script>
     <script src="assets/js/pizzaDoce.js"></script>
     <script src="assets/js/esfihaSalgada.js"></script>
     <script src="assets/js/esfihaDoce.js"></script>
-</body>
-
+  </body>
 </html>
