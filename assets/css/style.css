@@ -16,6 +16,25 @@ figure, section{
     object-position: center;
 }
 
+.horario-position{
+  display: flex;
+  justify-content: center;
+}
+
+.horario-funcionamento-container{
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horario-funcionamento-container > .horarios{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .carousel-item::before {
     content: "";
     width: 100%;
